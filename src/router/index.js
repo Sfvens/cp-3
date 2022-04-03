@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import HomeView from '../views/HomeView.vue'
 import CarView from '../views/CarView.vue'
 import TeamView from '../views/TeamView.vue'
 import AboutView from '../views/AboutView.vue'
 
-//routing done???
+import ReviewView from '../views/ReviewView.vue'
 
 Vue.use(VueRouter)
 
@@ -29,7 +30,12 @@ const routes = [
     path: '/about',
     name: 'about',
     component: AboutView
-  }
+  },
+  {
+    path: '/review',
+    name: 'review',
+    component: ReviewView
+  },
 ]
 
 const router = new VueRouter({
